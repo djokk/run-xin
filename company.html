@@ -10,6 +10,8 @@
   <!-- <script src="./js/map.js"></script> -->
   <link rel="shortcut icon" href="./img/logo-icon.ico" type="logo">
   <link rel="stylesheet" href="./css/font-awesome.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -36,7 +38,7 @@
     <div class="custom-container">
       <div class="container d-flex justify-content-between">
         <div class="col-xl-5 d-flex align-items-center">
-          <h1 class="title">Оборудование</h1>
+          <h1 class="title">О компании</h1>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
           <img class="rectangle-img" src="./img/mask-product.png" alt="">
@@ -59,8 +61,11 @@
           <h1 class="overhead">О НАШЕЙ КОМПАНИИ</h1>
           <h2 class="title">Познакомьтесь с нашей компанией</h2>
           <p class="subtitle">Компания RunXin занимается на производстве исследование оборудование автоматизации для нового стенного материала уже 20 лет</p>
-          <p class="undertitle">Превосходным технологиями отличными качествами комплексными услугами на продаже оборудования более чем 20 провинциях ,городах, автономных областях , и экспорт в юго-восточную Азию, Латинскую Америку...</p>
-          <a href="" class="btn">о нас</a>
+          <p class="undertitle">Превосходными технологиями,отличными качествами,комплексными услугами на продаже оборудования более чем двадцати провинциях,городах,автономных областях,и экспорт в Юго-восточную Азию,Латинскую Америку,Средний Восток и Африку, мы получили положительные оценки от клиентов внутренних и зарубежных.</p>
+        </div>
+        <div class="company__undertext">
+          <p class="undertitle">Компания всегда соблюдает цель—развивается на основе науки и техники, существует на основе качества, заслужит клиентов на основе репутации, кроме того,в проведении полного рыночного исследования и обслуживания,обеспечить удовлетворительные продукты для различных потребностей клиентов и внимательные обслуживания.Научное управление, высококачественные продукты, совершенное  обслуживание после продажи помогают нам непрерывное развитие.Мы искренно надеемся на отличное сотрудничество со старыми и новыми клиентам от всего мира. Давайте возьмемся за руки вместе,для того чтобы создать лучшее будущее.</p>
+          <p class="undertitle">ООО Компания машиностроения Жуньсинь города Лоян расположен в провинции Хэнань Китая, Лоян раньше был исторические столицы тринадцати династий.Компания Жуньсинь специализируется на производстве,исследовании,дизайне кирпичного завод уже двадцать лет,уже прошло ISO9001: 2008 сертификацию системы менеджмента качества,стало назначенной производственной единицей в Национальной Ассоциации Кирпича.</p>
         </div>
       </div>
     </div>
@@ -100,6 +105,20 @@
       </div>
     </div>
 
+  </section>
+  <section class="album withdraw">
+    <div class="custom-container">
+      <div class="container">
+        <div class="gallery-sliders">
+          <img class="gallery-sliders__img" src="./img/g1.jpg" alt="g1">
+          <img class="gallery-sliders__img" src="./img/g2.jpg" alt="g2">
+          <img class="gallery-sliders__img" src="./img/g3.jpg" alt="g3">
+          <img class="gallery-sliders__img" src="./img/g4.jpg" alt="g4">
+          <img class="gallery-sliders__img" src="./img/g5.jpg" alt="g5">
+          <img class="gallery-sliders__img" src="./img/g6.jpg" alt="g6">
+        </div>
+      </div>
+    </div>
   </section>
   <section class="kontact withdraw">
     <div class="container">
@@ -200,10 +219,13 @@
     </div>
   </footer>
   <script src="./js/jquery-3.5.1.slim.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/jquery-migrate-3.3.2.min.js"></script>
   <script src="./js/bootstrap.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFBmTHbNcItIjC0a9DUoSa2LSf9UA8BBM&callback=initMap&libraries=&v=weekly"></script>
   <!-- <script async defer src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBd8P3I55UMnYB0Fu21Qx2xT-g2QiPLpNs&center=47.686760894954304,-122.17662200927734&zoom=12&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x212121&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x757575&style=element:labels.text.stroke%7Ccolor:0x212121&style=feature:administrative%7Celement:geometry%7Ccolor:0x757575&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0x181818&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b&style=feature:road%7Celement:geometry.fill%7Ccolor:0x2c2c2c&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x8a8a8a&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x373737&style=feature:road.highway%7Celement:geometry%7Ccolor:0x3c3c3c&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e4e4e&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x000000&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x3d3d3d&size=480x360"></script> -->
   <script src="./js/map.js"></script>
+  <script src="./js/slider.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

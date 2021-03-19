@@ -1,15 +1,8 @@
 
 $(document).ready(function () { 
   $('.scrollDown').click(function (event) {
-  // $('#scrollDown').on("click", "a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
-
-    // if($('.burger').hasClass('open')){
-    //   $('.burger').removeClass('open');
-    //   $('.nav__item').css('display', 'none');
-    //   $('body').removeClass('overflow-y');
-    // }
     //забираем идентификатор бока с атрибута href
     var id = $(this).attr('href');
 
@@ -23,11 +16,6 @@ $(document).ready(function () {
   });
 
   //////////////////// MENU BURGER ////////////////////////////////////
-  // if($('body').width() < 991) {
-    // $('.nav__item').css('display', 'none');
-    // $('.nav__item').attr('style','display: none');
-  // }
-
   $(window).on('resize', function(e){
     if(window.innerWidth > 991){
       $('.nav__item').attr('style','');
@@ -36,7 +24,6 @@ $(document).ready(function () {
       $('.nav__item').attr('style','display: none');
     }
   });
-
   $('.burger').click(function () {
     if($('.burger').hasClass('open')){
       $('body').removeClass('overflow-y');
@@ -47,7 +34,6 @@ $(document).ready(function () {
       else {
         $('.nav__item').fadeOut(300);
       }
-      // $('.nav__item').css('display', 'none');
     }else{
       $('body').addClass('overflow-y');
       $('.burger').addClass('open');
@@ -55,7 +41,6 @@ $(document).ready(function () {
         $('.nav__item').fadeIn(50);
       }
       else {
-        // $('.nav__item').fadeIn('slow','linear');
         $('.nav__item').fadeIn(300);
       }
       $('.nav__item').css('display', 'flex');
@@ -79,13 +64,6 @@ $(document).ready(function () {
   });
 
   //////////////////// KATEGORY MENU ///////////////////////////////////
-  // if($('body').width() <= 991) {
-  //   // $('.filter').css('display', 'none');
-  //   $('.fa-angle-up').removeClass('fa-angle-up').addClass('fa-angle-down');
-  // }
-  // else {
-  //   $('.filter').attr('style','');
-  // }
   $(window).on('resize', function(e){
     if(window.innerWidth > 991){
       $('.filter').attr('style','');
@@ -100,8 +78,6 @@ $(document).ready(function () {
       if($('.filter-btn__link').hasClass('open')){
         $('.filter-btn__link').removeClass('open');
         $('.fa-angle-up').removeClass('fa-angle-up').addClass('fa-angle-down');
-        // $('.fa-angle-down').removeClass('fa-angle-down').addClass('fa-angle-up');
-        // $('.filter').css('display', 'none');
         $('.filter').slideUp({
           duration: 'slow',
           easing: 'linear'
@@ -109,8 +85,6 @@ $(document).ready(function () {
       }else{
         $('.filter-btn__link').addClass('open');
         $('.fa-angle-down').removeClass('fa-angle-down').addClass('fa-angle-up');
-        // $('.fa-angle-up').removeClass('fa-angle-up').addClass('fa-angle-down');
-        // $('.filter').css('display', 'block');
         $('.filter').slideDown({
           duration: 'slow',
           easing: 'linear'
