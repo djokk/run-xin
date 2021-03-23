@@ -382,16 +382,18 @@ body {
       transform: translateX(2em) rotate(-135deg);
     }
   }
+}
 
+.header-slider {
   .slider {
     background: $red;
     border-radius: 64px;
     @include focus;
-
+  
     @include custom_max(430px) {
       border-radius: 34px;
     }
-
+  
     .sliders {
       .item {
         padding: 50px 22px;
@@ -403,83 +405,83 @@ body {
         @include block_991 {
           padding: 40px 22px;
         }
-
+  
         @include block_767 {
           padding: 30px 20px;
         }
-
+  
         @include custom_max(430px) {
           padding: 10px 15px;
         }
-
+  
         &__content {
           // max-width: 425px;
           max-width: 514px;
-
+  
           @include block_1199 {
             max-width: 382px;
           }
-
+  
           @include block_991 {
             max-width: 266px;
           }
-
+  
           @include block_767 {
             max-width: 166px;
           }
-
+  
           @include custom_max(430px) {
             max-width: 130px;
           }
         }
-
+  
         .overhead {
           color: $black2d;
           font-weight: 700;
-
+  
           @include block_1199 {
             font-size: 13px;
           }
-
+  
           @include block_767 {
             font-size: 6px;
           }
-
+  
           @include custom_max(430px) {
             font-size: 4px;
           }
         }
-
+  
         .title {
           font-weight: 700;
           letter-spacing: 3px;
           color: $white;
           margin: 18px 0;
-
+  
           @include block_1199 {
             font-size: 52px;
             line-height: 56px;
             margin: 15px 0;
           }
-
+  
           @include block_991 {
             font-size: 36px;
             line-height: 46px;
             margin: 10px 0;
           }
-
+  
           @include block_767 {
             font-size: 20px;
             line-height: 24px;
             margin: 6px 0;
           }
-
+  
           @include custom_max(430px) {
             font-size: 15px;
             line-height: 17px;
           }
         }
-
+  
         .subtitle {
           font-family: 'Lato', sans-serif;
           font-size: 20px;
@@ -487,81 +489,81 @@ body {
           line-height: 32px;
           color: $black2d;
           margin-bottom: 0;
-
+  
           @include block_1199 {
             font-size: 15px;
             line-height: 22px;
           }
-
+  
           @include block_991 {
             font-size: 11px;
             line-height: 15px;
           }
-
+  
           @include block_767 {
             font-size: 7px;
             line-height: 9px;
           }
-
+  
           @include custom_max(430px) {
             font-size: 5px;
             line-height: 7px;
           }
         }
-
+  
         .btn {
           color: $black2d;
           background: $white;
           margin-top: 38px;
           border: 2px solid $white;
           box-shadow: 0px 0px 30px #2f2f4477;
-
+  
           @include block_991 {
             font-size: 11px;
           }
-
+  
           @include block_767 {
             font-size: 10px;
             padding: 6px 18px;
           }
-
+  
           @include custom_max(430px) {
             font-size: 8px;
             padding: 5px 14px;
             margin-top: 28px;
           }
-
+  
           &:hover {
             background: $red;
             color: $white;
           }
         }
-
+  
         &__image {
           width: 560px;
           height: 560px;
           position: relative;
-
+  
           @include block_1199 {
             width: 450px;
             height: 450px;
           }
-
+  
           @include block_991 {
             width: 350px;
             height: 350px;
           }
-
+  
           @include block_767 {
             width: 250px;
             height: 250px;
           }
-
+  
           @include custom_max(430px) {
             width: 184px;
             height: 184px;
           }
-
+  
           &::after {
             content: "";
             width: 540px;
@@ -572,30 +574,30 @@ body {
             left: 50%;
             border-radius: 50%;
             transform: translate(-50%, -50%);
-
+  
             // transform: scaleX(0);
             // transition: transform .3s;
             @include block_1199 {
               width: 430px;
               height: 430px;
             }
-
+  
             @include block_991 {
               width: 350px;
               height: 350px;
             }
-
+  
             @include block_767 {
               width: 250px;
               height: 250px;
             }
-
+  
             @include custom_max(430px) {
               width: 180px;
               height: 180px;
             }
           }
-
+  
           img {
             width: 100%;
             height: 100%;
@@ -2108,6 +2110,11 @@ body {
 }
 
 .album {
+  .custom-container {
+    padding: 15px;
+    background: $white;
+    border-radius: 48px;
+  }
   .gallery-sliders {
     position: relative;
     &__img {
